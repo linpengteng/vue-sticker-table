@@ -1,9 +1,10 @@
 {
   "name": "vue-sticker-table",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "基于 css sticky 特性而实现的 Vue2.x/Vue3.x Table 组件",
   "homepage": "https://github.com/linpengteng/vue-sticker-table#readme",
   "author": "lin pengteng <china.linpengteng@gmail.com>",
+  "license": "MIT License",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "main": "dist/index.mjs",
