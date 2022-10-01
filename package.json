@@ -1,8 +1,11 @@
 {
   "name": "vue-sticker-table",
-  "version": "1.2.0",
-  "description": "基于 css sticky 特性而实现的 Vue2.x Table 组件",
+  "version": "1.3.0",
+  "description": "基于 css sticky 特性而实现的 Vue2.x/Vue3.x Table 组件",
+  "homepage": "https://github.com/linpengteng/vue-sticker-table#readme",
   "author": "lin pengteng <china.linpengteng@gmail.com>",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "main": "dist/index.mjs",
   "files": [
     "dist"
@@ -14,15 +17,64 @@
     "sticky table"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "shx rm -rf dist && rollup -c"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/linpengteng/vue-sticker-table.git"
   },
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/linpengteng/vue-sticker-table/issues"
   },
-  "homepage": "https://github.com/linpengteng/vue-sticker-table#readme"
+  "dependencies": {
+    "less": "^4.1.3",
+    "vant": "^3.6.3",
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^3.1.9",
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-dynamic-import-vars": "^1.4.4",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "14.1.0",
+    "@rollup/plugin-replace": "^4.0.0",
+    "@rollup/plugin-typescript": "^8.5.0",
+    "@rollup/pluginutils": "^4.2.1",
+    "@types/eslint": "^8.4.6",
+    "@types/node": "^18.7.21",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "@typescript-eslint/typescript-estree": "^5.38.0",
+    "@vitejs/plugin-vue": "^3.1.0",
+    "@volar-plugins/prettyhtml": "^1.0.3",
+    "@vue/compiler-core": "^3.2.39",
+    "@vue/shared": "^3.2.39",
+    "eslint": "^8.24.0",
+    "eslint-plugin-vue": "^9.5.1",
+    "postcss": "^8.4.17",
+    "prettier": "^2.7.0",
+    "rollup": "^2.79.1",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-polyfill-node": "^0.10.2",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.34.0",
+    "rollup-plugin-vue": "^6.0.0",
+    "shx": "^0.3.4",
+    "sirv": "^2.0.2",
+    "slash": "^4.0.0",
+    "stylelint": "^14.12.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "terser": "^5.15.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3",
+    "unplugin-auto-import": "^0.11.2",
+    "unplugin-vue-components": "^0.22.7",
+    "vite": "^3.1.3",
+    "vue-template-compiler": "^2.7.10",
+    "vue-tsc": "^0.40.13"
+  }
 }
