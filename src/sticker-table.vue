@@ -172,8 +172,8 @@ export interface Column {
 }
 
 export interface Props {
+  rowKey?: string;
   layout?: 'fixed' | 'auto';
-  rowKey: string;
   columns: Array<Column>;
   scrolls?: { x?: string | number, y?: string | number };
   customRow: (record: Record<string, any>, index: number) => { on?: Record<string, Function> };
