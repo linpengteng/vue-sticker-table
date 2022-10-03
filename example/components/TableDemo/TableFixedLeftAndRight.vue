@@ -1,14 +1,9 @@
 <template>
   <div class="demo">
-    <div class="title">
-      示范F (左右列固定)
-    </div>
-
     <div class="container">
       <sticker-table
         :layout="layout"
         :columns="columns"
-        :scrolls="scrolls"
         :loadData="loadData"
         :customRow="customRow"
         :immediate="immediate"
@@ -42,15 +37,9 @@ const columns = [
     width: 55
   },
   {
-    title: '编号',
-    dataIndex: 'materialNum',
-    ellipsis: true,
-    fixed: 'left' as 'left',
-    width: 110
-  },
-  {
     title: '名称',
     dataIndex: 'materialName',
+    fixed: 'left' as 'left',
     width: 130
   },
   {
@@ -63,22 +52,6 @@ const columns = [
     title: '申请数',
     dataIndex: 'orderQty',
     width: 95
-  },
-  {
-    title: '审核数',
-    dataIndex: 'jwspOrderQty',
-    width: 95
-  },
-  {
-    title: '使用方向',
-    dataIndex: 'usedforName',
-    ellipsis: true,
-    width: 280
-  },
-  {
-    title: '计划年月',
-    dataIndex: 'planMonth',
-    width: 100
   },
   {
     title: '计划描述',
@@ -123,6 +96,7 @@ const columns = [
   {
     title: '创建人',
     dataIndex: 'createByName',
+    fixed: 'right' as 'right',
     ellipsis: true,
     width: 95
   },
@@ -130,13 +104,9 @@ const columns = [
     title: '部门',
     dataIndex: 'departmentName',
     ellipsis: true,
-    fixed: 'right' as 'right',
     width: 95
   }
 ]
-const scrolls = {
-  y: 200
-}
 const loadData = () => {
   return [...source]
 }
@@ -154,7 +124,7 @@ const layout = 'fixed' as 'fixed'
 <style lang="less" scoped>
 .demo {
   width: 100%;
-  margin: 50px 0;
+  margin: 30px 0;
   box-sizing: border-box;
   & > .title {
     width: 100%;
