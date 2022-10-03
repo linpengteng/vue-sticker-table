@@ -8,7 +8,7 @@
 
 
 >简介：基于 css sticky 特性实现的 Table 组件, 支持 Vue2.x / Vue3.x<br />
->演示：[https://linpengteng.github.io/example/vue-sticker-table](https://linpengteng.github.io/example/vue-sticker-table)<br />
+>演示：[https://linpengteng.github.io/example/vue-sticker-table](https://linpengteng.github.io/example/vue-sticker-table)
 
 <br />
 
