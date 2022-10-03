@@ -16,7 +16,7 @@
 ```bash
   yarn add vue-sticker-table@1.2.0 # Vue2.x
 
-  yarn add vue-sticker-table@1.3.2 # Vue3.x
+  yarn add vue-sticker-table@1.3.5 # Vue3.x
 ```
 
 <br />
