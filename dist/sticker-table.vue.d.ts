@@ -22,8 +22,8 @@ export interface Column {
     align?: string;
 }
 export interface Props {
+    rowKey?: string;
     layout?: 'fixed' | 'auto';
-    rowKey: string;
     columns: Array<Column>;
     scrolls?: {
         x?: string | number;
@@ -43,14 +43,14 @@ export interface Props {
     };
 }
 declare const _default: import("vue").DefineComponent<{
-    layout: {
+    rowKey: {
         type: StringConstructor;
         required: false;
         default: string;
     };
-    rowKey: {
+    layout: {
         type: StringConstructor;
-        required: true;
+        required: false;
         default: string;
     };
     columns: {
@@ -105,14 +105,14 @@ declare const _default: import("vue").DefineComponent<{
 }, (_ctx: any, _cache: any) => import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
     [key: string]: any;
 }>, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
-    layout: {
+    rowKey: {
         type: StringConstructor;
         required: false;
         default: string;
     };
-    rowKey: {
+    layout: {
         type: StringConstructor;
-        required: true;
+        required: false;
         default: string;
     };
     columns: {
@@ -165,8 +165,8 @@ declare const _default: import("vue").DefineComponent<{
         };
     };
 }>>, {
-    layout: string;
     rowKey: string;
+    layout: string;
     columns: unknown[];
     scrolls: Record<string, any>;
     customRow: Function;

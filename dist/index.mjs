@@ -150,23 +150,22 @@ var Util = {
 };
 
 const _withScopeId = n => (pushScopeId("data-v-c0dd5596"), n = n(), popScopeId(), n);
-const _hoisted_1 = ["tableLayout"];
-const _hoisted_2 = { class: "s-table-thead" };
-const _hoisted_3 = { class: "s-table-thead-tr" };
-const _hoisted_4 = ["fixedLeft"];
-const _hoisted_5 = { class: "s-table-thead-th-cell" };
-const _hoisted_6 = { class: "s-table-tbody" };
-const _hoisted_7 = ["onClick", "onDblclick"];
-const _hoisted_8 = { class: "s-table-tbody-td-cell" };
-const _hoisted_9 = {
+const _hoisted_1 = { class: "s-table-thead" };
+const _hoisted_2 = { class: "s-table-thead-tr" };
+const _hoisted_3 = ["fixedLeft"];
+const _hoisted_4 = { class: "s-table-thead-th-cell" };
+const _hoisted_5 = { class: "s-table-tbody" };
+const _hoisted_6 = ["onClick", "onDblclick"];
+const _hoisted_7 = { class: "s-table-tbody-td-cell" };
+const _hoisted_8 = {
     key: 0,
     class: "s-nested-table-empty"
 };
-const _hoisted_10 = { class: "s-empty-image" };
-const _hoisted_11 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/ createElementVNode("p", { class: "s-empty-text" }, [
+const _hoisted_9 = { class: "s-empty-image" };
+const _hoisted_10 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/ createElementVNode("p", { class: "s-empty-text" }, [
     /*#__PURE__*/ createElementVNode("span", null, "暂无数据")
 ], -1 /* HOISTED */));
-const _hoisted_12 = {
+const _hoisted_11 = {
     key: 0,
     class: "s-pagination-container"
 };
@@ -176,8 +175,8 @@ const __default__ = {
 var script = /*#__PURE__*/ defineComponent({
     ...__default__,
     props: {
+        rowKey: { type: String, required: false, default: '' },
         layout: { type: String, required: false, default: 'auto' },
-        rowKey: { type: String, required: true, default: '' },
         columns: { type: Array, required: true, default: () => [] },
         scrolls: { type: Object, required: false, default: undefined },
         customRow: { type: Function, required: true, default: (record, index) => ({ on: {} }) },
@@ -434,7 +433,7 @@ var script = /*#__PURE__*/ defineComponent({
                         'position': 'sticky',
                         'right': rightWidth + 'px',
                         'z-index': column.fixedTop === true ? 80 : 30,
-                        'box-shadow': limitRight > 0 && index === fixedRightIndex ? boxShadow : 'none'
+                        'box-shadow': limitRight > 1 && index === fixedRightIndex ? boxShadow : 'none'
                     };
                 }
                 return style;
@@ -618,8 +617,7 @@ var script = /*#__PURE__*/ defineComponent({
                                 ref_key: "table",
                                 ref: table,
                                 class: "s-nested-table",
-                                tableLayout: compute.nestedTableLayout.value,
-                                style: normalizeStyle({ width: compute.nestedTableWidth.value })
+                                style: normalizeStyle({ width: compute.nestedTableWidth.value, tableLayout: compute.nestedTableLayout.value })
                             }, [
                                 createElementVNode("colgroup", null, [
                                     (openBlock(true), createElementBlock(Fragment, null, renderList(__props.columns, (column, colIndex) => {
@@ -629,8 +627,8 @@ var script = /*#__PURE__*/ defineComponent({
                                         }, null, 4 /* STYLE */));
                                     }), 128 /* KEYED_FRAGMENT */))
                                 ]),
-                                createElementVNode("thead", _hoisted_2, [
-                                    createElementVNode("tr", _hoisted_3, [
+                                createElementVNode("thead", _hoisted_1, [
+                                    createElementVNode("tr", _hoisted_2, [
                                         (openBlock(true), createElementBlock(Fragment, null, renderList(__props.columns, (column, colIndex) => {
                                             return (openBlock(), createElementBlock("th", {
                                                 key: colIndex,
@@ -638,7 +636,7 @@ var script = /*#__PURE__*/ defineComponent({
                                                 style: normalizeStyle(methods.renderElementStyle({ ...column, fixedTop: compute.isFixedTop.value }, colIndex)),
                                                 fixedLeft: colIndex <= compute.fixedLeftIndex.value
                                             }, [
-                                                createElementVNode("span", _hoisted_5, [
+                                                createElementVNode("span", _hoisted_4, [
                                                     renderSlot(_ctx.$slots, methods.renderScopedSlots('title', { ...column }), {
                                                         title: column.title,
                                                         column: { ...column },
@@ -648,11 +646,11 @@ var script = /*#__PURE__*/ defineComponent({
                                                         createTextVNode(toDisplayString(column.title), 1 /* TEXT */)
                                                     ])
                                                 ])
-                                            ], 12 /* STYLE, PROPS */, _hoisted_4));
+                                            ], 12 /* STYLE, PROPS */, _hoisted_3));
                                         }), 128 /* KEYED_FRAGMENT */))
                                     ])
                                 ]),
-                                createElementVNode("tbody", _hoisted_6, [
+                                createElementVNode("tbody", _hoisted_5, [
                                     (openBlock(true), createElementBlock(Fragment, null, renderList(sources.value, (source, rowIndex) => {
                                         return (openBlock(), createElementBlock("tr", {
                                             key: source[__props.rowKey],
@@ -666,7 +664,7 @@ var script = /*#__PURE__*/ defineComponent({
                                                     class: "s-table-tbody-td",
                                                     style: normalizeStyle(methods.renderElementStyle({ ...column, fixedTop: false }, colIndex))
                                                 }, [
-                                                    createElementVNode("span", _hoisted_8, [
+                                                    createElementVNode("span", _hoisted_7, [
                                                         renderSlot(_ctx.$slots, methods.renderScopedSlots('customRender', { ...column }), {
                                                             value: source[column.dataIndex],
                                                             source: { ...source },
@@ -681,17 +679,17 @@ var script = /*#__PURE__*/ defineComponent({
                                                     ])
                                                 ], 4 /* STYLE */));
                                             }), 128 /* KEYED_FRAGMENT */))
-                                        ], 40 /* PROPS, HYDRATE_EVENTS */, _hoisted_7));
+                                        ], 40 /* PROPS, HYDRATE_EVENTS */, _hoisted_6));
                                     }), 128 /* KEYED_FRAGMENT */))
                                 ])
-                            ], 12 /* STYLE, PROPS */, _hoisted_1)
+                            ], 4 /* STYLE */)
                         ], 512 /* NEED_PATCH */),
                         (!sources.value.length)
-                            ? (openBlock(), createElementBlock("div", _hoisted_9, [
-                                createElementVNode("div", _hoisted_10, [
+                            ? (openBlock(), createElementBlock("div", _hoisted_8, [
+                                createElementVNode("div", _hoisted_9, [
                                     createVNode(script$1)
                                 ]),
-                                _hoisted_11
+                                _hoisted_10
                             ]))
                             : createCommentVNode("v-if", true)
                     ], 38 /* CLASS, STYLE, HYDRATE_EVENTS */),
@@ -703,7 +701,7 @@ var script = /*#__PURE__*/ defineComponent({
                         : createCommentVNode("v-if", true)
                 ], 512 /* NEED_PATCH */),
                 (__props.paginate)
-                    ? (openBlock(), createElementBlock("div", _hoisted_12, [
+                    ? (openBlock(), createElementBlock("div", _hoisted_11, [
                         renderSlot(_ctx.$slots, "pagination", {
                             loading: loading.value,
                             pagination: pagination,

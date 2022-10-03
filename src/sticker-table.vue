@@ -23,8 +23,7 @@
           <table
             ref="table"
             class="s-nested-table"
-            :tableLayout="compute.nestedTableLayout.value"
-            :style="{ width: compute.nestedTableWidth.value }"
+            :style="{ width: compute.nestedTableWidth.value, tableLayout: compute.nestedTableLayout.value }"
           >
             <colgroup>
               <col
@@ -480,7 +479,7 @@ const methods = {
         'position': 'sticky',
         'right': rightWidth + 'px',
         'z-index': column.fixedTop === true ? 80 : 30,
-        'box-shadow': limitRight > 0 && index === fixedRightIndex ? boxShadow : 'none'
+        'box-shadow': limitRight > 1 && index === fixedRightIndex ? boxShadow : 'none'
       }
     }
 

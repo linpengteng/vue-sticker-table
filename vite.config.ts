@@ -4,6 +4,7 @@ import Components from 'unplugin-vue-components/vite'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
+  base: './',
   root: './example',
   publicDir: 'assets',
   plugins: [
