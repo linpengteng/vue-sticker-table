@@ -1,3 +1,9 @@
+<p style="padding-left: 10px" align="left">
+ <a href="https://github.com/linpengteng/vue-sticker-table"><img src="https://img.shields.io/badge/github-doc-green?logo=github&style=flat" alt="github"></a>
+  <a href="https://www.npmjs.com/package/vue-sticker-table"><img src="https://img.shields.io/npm/v/vue-sticker-table.svg" alt="npm package"></a>
+  <a href="https://www.npmjs.com/package/vue-sticker-table"><img src="https://img.shields.io/npm/dw/vue-sticker-table.svg?sanitize=true" alt="downloads"></a>
+</p>
+
 <p align="center">
   <img 
     style="width: 98%; margin: 0 auto;" 
@@ -7,8 +13,10 @@
 </p>
 
 
+<p style="padding-left: 15px;">
 简介：基于 css sticky 特性实现的 Table 组件, 支持 Vue2.x / Vue3.x<br />
 演示：[https://linpengteng.github.io/example/vue-sticker-table](https://linpengteng.github.io/example/vue-sticker-table)
+</p>
 
 <br />
 

@@ -1,5 +1,22 @@
 <template>
   <section>
+    <div class="fix-badge">
+      <a
+        style="margin: 0 3px"
+        href="https://github.com/linpengteng/vue-sticker-table"
+      ><img
+        src="https://img.shields.io/badge/github-doc-green?logo=github&style=flat"
+        alt="github"
+      ></a>
+      <a
+        style="margin: 0 3px"
+        href="https://www.npmjs.com/package/vue-sticker-table"
+      ><img
+        src="https://img.shields.io/npm/v/vue-sticker-table.svg"
+        alt="npm package"
+      ></a>
+    </div>
+
     <h2>Vue Sticker Table</h2>
 
     <div class="demo-container">
@@ -67,6 +84,19 @@ section {
   top: 0;
   left: 0;
   right: 0;
+
+  .fix-badge {
+    display: block;
+    width: 100%;
+    max-width: 960px;
+    padding-right: 12px;
+    margin: 30px auto -30px;
+    padding-left: 10px;
+    text-align: right;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 999;
+  }
 
   h2 {
     flex: 0 0 auto;
