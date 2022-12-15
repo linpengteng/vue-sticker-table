@@ -1,7 +1,7 @@
 <p style="padding-left: 10px" align="left">
  <a href="https://github.com/linpengteng/vue-sticker-table"><img src="https://img.shields.io/badge/github-doc-green?logo=github&style=flat" alt="github"></a>
   <a href="https://www.npmjs.com/package/vue-sticker-table"><img src="https://img.shields.io/npm/v/vue-sticker-table.svg" alt="npm package"></a>
-  <a href="https://www.npmjs.com/package/vue-sticker-table"><img src="https://img.shields.io/npm/dw/vue-sticker-table.svg?sanitize=true" alt="downloads"></a>
+  <a href="https://www.npmjs.com/package/vue-sticker-table"><img src="https://img.shields.io/npm/dm/vue-sticker-table.svg?sanitize=true" alt="downloads"></a>
 </p>
 
 <p align="center">
