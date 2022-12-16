@@ -5,6 +5,8 @@
     "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true
   },
-
-  "include": ["vite.config.ts", "rollup.config.ts"]
+  "include": [
+    "vite.config.ts",
+    "rollup.config.ts"
+  ]
 }
