@@ -1799,10 +1799,10 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-cz-message-helper@^1.1.7:
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/cz-message-helper/-/cz-message-helper-1.1.7.tgz#d934d70b6a2c146d677b1c44bf123cbdf6ab6c3b"
-  integrity sha512-Pcj94+zpGs7iDZAWjmTmo2Q2IukYNEm5nqS5d/lSbf8L+P9so9YuErLz5tozWZ9Q/sqMsH9d988SBSFU/nGuTw==
+cz-message-helper@^1.1.8:
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/cz-message-helper/-/cz-message-helper-1.1.8.tgz#a9f3301a64a19f316c91b8549b3c791244276560"
+  integrity sha512-WX1tIa6qyOoVzLoOYZF7e/15X5vbfziq0BiKg0MdwQXCR/hicMx5Frg9M9LadIeK9fVvJGcoZKMG4196sYAWvg==
   dependencies:
     find-config "^1.0.0"
     inquirer "^9.1.4"

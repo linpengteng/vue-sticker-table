@@ -55,7 +55,7 @@
     "@volar-plugins/prettyhtml": "^1.0.3",
     "@vue/compiler-core": "^3.2.45",
     "@vue/shared": "^3.2.45",
-    "cz-message-helper": "^1.1.7",
+    "cz-message-helper": "^1.1.8",
     "eslint": "^8.29.0",
     "eslint-plugin-vue": "^9.8.0",
     "husky": "^8.0.2",
