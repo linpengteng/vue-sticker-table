@@ -1,6 +1,6 @@
 {
   "name": "vue-sticker-table",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "基于 css sticky 特性实现的 Table 组件, 通过 columns 和 slot 灵活配置, 支持 Vue2.0 / Vue3.0",
   "homepage": "https://github.com/linpengteng/vue-sticker-table#readme",
   "author": "lin pengteng <china.linpengteng@gmail.com>",
