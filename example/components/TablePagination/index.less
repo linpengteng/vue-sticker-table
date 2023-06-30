@@ -1,0 +1,53 @@
+.van-pagination-controller {
+  display: flex;
+  .van-pagination {
+    width: calc(100% - 80px);
+    height: 38px;
+    margin-top: 3px;
+    overflow: hidden;
+    flex: 1 1 auto;
+
+    :deep(.van-pagination__item) {
+      height: 35px;
+    }
+
+    :deep(.van-pagination__item::after) {
+      border: none;
+    }
+  }
+  .van-dropdown-menu {
+    width: 80px;
+    height: 35px;
+    margin-top: 3px;
+    position: relative;
+    flex: 0 0 auto;
+    &.disabled {
+      pointer-events: none;
+    }
+    :deep(.van-dropdown-menu__bar) {
+      height: 35px;
+      box-shadow: none;
+    }
+    :deep(.van-dropdown-menu__title) {
+      padding: 0 12px 0 0;
+      color: #2c68f5;
+      font-size: 14px;
+      line-height: 22px;
+    }
+    :deep(.van-dropdown-menu__title::after) {
+      right: 2px;
+      border-color: transparent transparent #2c68f5 #2c68f5;
+    }
+    :deep(.van-dropdown-item__option) {
+      width: 100%;
+      justify-content: center;
+      .van-cell__title {
+        flex: 0 0 auto;
+      }
+      .van-cell__value {
+        display: none;
+        flex: 0 0 auto;
+      }
+    }
+  }
+}
