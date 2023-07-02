@@ -20,9 +20,9 @@
 
 # 安装
 ```bash
-  yarn add vue-sticker-table@2.0.0 # Vue2.x
+  yarn add vue-sticker-table@^2.0.0 # Vue2.x
 
-  yarn add vue-sticker-table@3.0.0 # Vue3.x
+  yarn add vue-sticker-table@^3.0.2 # Vue3.x
 ```
 
 <br />
